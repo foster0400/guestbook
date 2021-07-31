@@ -1,4 +1,4 @@
-Jalankan composer install
-buat file baru .env dan paste isi dari .env.example.
-Jalankan perintah php artisan key:generate
+Jalankan composer install<br>
+buat file baru .env dan paste isi dari .env.example.<br>
+Jalankan perintah php artisan key:generate<br>
 Menjalankan php artisan config:clear
