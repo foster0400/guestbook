@@ -36,5 +36,6 @@ class GuestbookController extends Controller
             'description' => $request->description,
             'creator_id' => Auth::user()->id,
         ]);
+        return redirect()->back();
     }
 }
