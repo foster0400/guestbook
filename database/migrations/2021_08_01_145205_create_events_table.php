@@ -19,7 +19,8 @@ class CreateEventsTable extends Migration
             $table->unsignedBigInteger('creator_id');
             $table->string('title');
             $table->string('image');
-            $table->boolean('isOpened');
+            $table->boolean('isOpened')->default(true);
+            $table->string('description')->nullable(true);
 
             $table->foreign('creator_id')->references('id')->on('users');
         });
