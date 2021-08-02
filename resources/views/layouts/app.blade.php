@@ -21,6 +21,7 @@
 </head>
 <style>
     .btn-outline{
+        width: 100px;
         border: 1px solid black;
         color:white;
     }
@@ -62,10 +63,10 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href=""><span class="fa fa-feather-alt" aria-hidden="true"></span> Sign </a>
+                                <a class="nav-link" href="/sign-guestbook"><span class="fa fa-feather-alt" aria-hidden="true"></span> Sign </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-outline" href=""><span class="fa fa-plus" aria-hidden="true"></span> Create</a>
+                                <a class="nav-link" href="/create-guestbook"><span class="fa fa-plus" aria-hidden="true"></span> Create</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -73,6 +74,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/profile">{{ __('Profile') }}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
