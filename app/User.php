@@ -8,6 +8,15 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    public function event()
+    {
+        return $this->hasMany(Event::class, 'creator_id');
+    }
+    public function sign()
+    {
+        return $this->hasMany(Sign::class, 'signer_id');
+    }
+
     use Notifiable;
 
     /**
@@ -16,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','address',
     ];
 
     /**
