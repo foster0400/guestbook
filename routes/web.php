@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/sign-guestbook', 'GuestbookController@search');
+Route::get('/create-guestbook', function(){return view('createGB');});
