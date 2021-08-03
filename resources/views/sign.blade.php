@@ -62,15 +62,22 @@
             </div>
 
             @if($acceptance)
-                <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
-                    @csrf
-                    <!-- The value will be changed later !!! -->
+                @if($isSigned){
                     <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
-                    <input type="text" class="form-control col-md-4" name="address" value="{{$user->address}}" placeholder ="Address">
-                    <input type="text" class="form-control col-md-4" name="message" value="" placeholder="Message">
-                    <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fas fa-check"></span></button>
-                    <input type="hidden" name="eventId" value={{$eventId}}>
-                </form>
+                    <input type="text" class="form-control col-md-4" name="address" value="{{$user->address}}" readonly>
+                    <input type="text" class="form-control col-md-4" name="message" value="" readonly>
+                }
+                @else
+                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
+                        @csrf
+                        <!-- The value will be changed later !!! -->
+                        <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
+                        <input type="text" class="form-control col-md-4" name="address" value="{{$user->address}}" placeholder ="Address">
+                        <input type="text" class="form-control col-md-4" name="message" value="" placeholder="Message">
+                        <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fas fa-check"></span></button>
+                        <input type="hidden" name="eventId" value={{$eventId}}>
+                    </form>
+                @endif
             @else
                 <div class="row justify-content-center">
                     <h3>Sorry, The event is currently not accepting any sign</h3>
