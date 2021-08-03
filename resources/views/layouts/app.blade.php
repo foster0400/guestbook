@@ -30,6 +30,10 @@
         background: #343a40;
         color: white !important;
     }
+    .btn-common{
+        background-color: #B1A6A4!important;
+        color: #F2F1EF!important;
+    }
     .bg-navbar{
         background-color:#B1A6A4;
     }
