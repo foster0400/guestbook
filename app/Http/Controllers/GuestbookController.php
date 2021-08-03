@@ -62,6 +62,20 @@ class GuestbookController extends Controller
         }
         return redirect()->back();        
     }
+
+    public function sign(Request $request){
+        $this->validate($request, [
+            'address' => ['required', 'string', 'max:70'],
+            'message' => ['required', 'string', 'max:150'],
+        ]);
+        Sign::create([
+            'address' => $request->address,
+            'message' => $request->message,
+            'signer_id' => Auth()->user()->id,
+            'event_id' => $request->eventId,
+        ]);
+        return redirect()->back();
+    }
 //new
     public function viewAll(){
         $myEvents = Event::where('creator_id',Auth()->user()->id);
