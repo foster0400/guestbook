@@ -57,7 +57,7 @@ class GuestbookController extends Controller
         if($exist){
             Event::where('id',$request->eventId)->update([
                 'title' => $request->title,
-                'desciprtion' =>  $request->description,
+                'description' =>  $request->description,
             ]);
         }
         return redirect()->back();        
