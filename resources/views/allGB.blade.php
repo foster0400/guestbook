@@ -15,10 +15,10 @@
             @foreach($events as $event)
                 <div class="row">
                     <div class="col">
-                        <strong>$event->id</strong>
+                        <strong>{{$event->id}}</strong>
                     </div>
                     <div class="col">
-                        <strong>$event->title</strong>
+                        <strong>{{$event->title}}</strong>
                     </div>
                 </div>
             @endforeach
