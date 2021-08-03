@@ -27,4 +27,4 @@ Route::post('/create-guestbook', 'GuestbookController@create');
 Route::post('/update-guestbook', 'GuestbookController@updateGB');
 Route::get('/profile', 'UserController@view');
 Route::post('/update-profile', 'UserController@update');
-
+Route::get('/myguestbook','GuestbookController@viewAll');
