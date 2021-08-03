@@ -25,9 +25,9 @@
             <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
                 @csrf
                 <!-- The value will be changed later !!! -->
-                <input type="text" class="form-control col-md-3" value=" AMSDMASK AKSDKAK HACIALLALAL PERKITWIIWWI" readonly>
-                <input type="text" class="form-control col-md-4" name="address" value="Jl. Abdul Rozak no 120 Palembang ilirilir" placeholder ="Address">
-                <input type="text" class="form-control col-md-4" name="message" value="Semoga dihari yang berbahagia ini dapat selalu berbahagia huahauhauhauhaua">
+                <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
+                <input type="text" class="form-control col-md-4" name="address" value="{{$user->address}}" placeholder ="Address">
+                <input type="text" class="form-control col-md-4" name="message" value="" placeholder="Message">
                 <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fas fa-check"></span></button>
                 <input type="hidden" name="eventId" value={{$eventId}}>
             </form>
