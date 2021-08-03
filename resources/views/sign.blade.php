@@ -20,6 +20,9 @@
         <div class="row justify-content-center">
             <h3>{{$event->title}}</h3>
         </div>
+        <div class="row justify-content-center">
+            <h5>{{$event->description}}</h3>
+        </div>
 
         @if($acceptance)
             <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
