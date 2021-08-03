@@ -66,8 +66,7 @@
                 <input type="text" class="form-control col-md-4" name="message" value="{{$exist->message}}" readonly>
 
             @if($acceptance)
-                @if($isSigned)
-                @else
+                @if(!$isSigned)
                     <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
                         @csrf
                         <!-- The value will be changed later !!! -->
