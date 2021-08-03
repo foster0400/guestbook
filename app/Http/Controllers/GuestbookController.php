@@ -52,7 +52,7 @@ class GuestbookController extends Controller
             'title' => ['required', 'string', 'max:255'],
         ]);
         $user = Auth()->user();
-        $my_event = $user->event;
+        $my_event = $user->event->get();
         dd($my_event);
         // Event::update([
 
