@@ -53,7 +53,7 @@ class GuestbookController extends Controller
         ]);
         $user = Auth()->user();
         $my_event = $user->event;
-        $exist = $my_event->where('id',$request->id)->first();
+        $exist = $my_event->where('id',$request->eventId)->first();
         if($exist){
             dd($exist);
         }
