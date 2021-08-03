@@ -15,6 +15,7 @@ class GuestbookController extends Controller
     {
         $user = Auth()->user();
         $isCreator = 0;
+        $isSigned = 0;
         $eventId = $request->eventId;
         $event=NULL;
         $message=NULL;
@@ -27,12 +28,18 @@ class GuestbookController extends Controller
                 $acceptance=$event->isOpened;
                 if($user->id==$event->creator_id){
                     $isCreator=1;
+                }else{
+                    
+                    $exist = $user->sign->where('id',$request->eventId)->first();
+                    if($exist){
+                        $isSigned=1;
+                    }
                 }
             }else{
                 $message="NOT FOUND";
             }
         }
-        return view('sign', ['isCreator'=>$isCreator, 'user'=>$user, 'event'=>$event, 'eventId'=>$eventId, 'message'=>$message, 'acceptance'=>$acceptance]);
+        return view('sign', ['isSigned'=>$isSigned,'isCreator'=>$isCreator, 'user'=>$user, 'event'=>$event, 'eventId'=>$eventId, 'message'=>$message, 'acceptance'=>$acceptance]);
     }
 
     public function create(Request $request){
@@ -47,6 +54,7 @@ class GuestbookController extends Controller
         ]);
         return redirect()->back();
     }
+
     public function updateGB(Request $request){
         $this->validate($request,[
             'title' => ['required', 'string', 'max:255'],
