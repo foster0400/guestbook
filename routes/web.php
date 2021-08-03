@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 
-Route::group(['middleware' => 'authenticate'], function () {
+Route::group(['middleware' => 'user'], function () {
     Route::get('/sign-guestbook', 'GuestbookController@search');
     Route::post('/sign-guestbook', 'GuestbookController@sign');
     Route::get('/create-guestbook', function(){return view('createGB');});
