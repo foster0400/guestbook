@@ -52,8 +52,12 @@ class GuestbookController extends Controller
             'title' => ['required', 'string', 'max:255'],
         ]);
         $user = Auth()->user();
-        $my_event = $user->event->get();
-        dd($my_event);
+        $my_event = $user->event;
+        $exist = $my_event->where('id',$request->id)->first();
+        if($exist){
+            dd($exist);
+        }
+        dd(0);
         // Event::update([
 
         // ]);
