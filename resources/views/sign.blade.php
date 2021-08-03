@@ -14,9 +14,9 @@
     </form>
     
     @if($event)
-        <div class="row">
+        <!-- <div class="row"> -->
             <h5>Created by : {{$event->user->name}}</h5>
-        </div>
+        <!-- </div> -->
         <div class="row justify-content-center">
             <h3>{{$event->title}}</h3>
         </div>
@@ -36,6 +36,11 @@
                 <h3>Sorry, The event is currently not accepting any sign</h3>
             </div>
         @endif
+    @else 
+        <div class="row justify-content-center">
+            <h3>Your inputted event ID can't be found, try another event ID!</h3>
+
+        </div>
         
     @endif
 </div>
