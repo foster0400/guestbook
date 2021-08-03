@@ -33,5 +33,5 @@ Route::group(['middleware' => 'user'], function () {
     Route::get('/myguestbook','GuestbookController@viewAll');
 });
 Route::get('/verify',function(){
-    return view('/black-bits/laravel-cognito-auth/verify');
+    return view('/vendor/black-bits/laravel-cognito-auth/verify');
 });
