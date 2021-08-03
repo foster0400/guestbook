@@ -31,7 +31,7 @@
         color: white !important;
     }
     .navbar{
-        background:#B1A6A4
+        color:#B1A6A4
     }
 </style>
 <body>
