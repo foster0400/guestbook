@@ -4,6 +4,9 @@
 
 @if($message)
     <script>alert("wrong input id")</script>;
+    <div class="row justify-content-center">
+        <h3>Your inputted event ID can't be found, try another event ID!</h3>
+    </div>
 @endif
 
 <div class="container">
@@ -38,12 +41,7 @@
             <div class="row justify-content-center">
                 <h3>Sorry, The event is currently not accepting any sign</h3>
             </div>
-        @endif
-    @else 
-        <div class="row justify-content-center">
-            <h3>Your inputted event ID can't be found, try another event ID!</h3>
-
-        </div>
+        @endif 
         
     @endif
 </div>
