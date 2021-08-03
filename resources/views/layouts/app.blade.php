@@ -30,14 +30,34 @@
         background: #343a40;
         color: white !important;
     }
+    .btn-common{
+        background-color: #B1A6A4!important;
+        color: #F2F1EF!important;
+    }
     .bg-navbar{
         background-color:#B1A6A4;
-        color: #F2F1EF;
     }
+    .nav-item .nav-link{
+        color: #F2F1EF!important;
+    }
+    .nav-item .nav-link:hover{
+        color: black!important;
+    }
+    .navbar-brand{
+        color: #F2F1EF!important;
+    }
+    .dropdown-menu{
+        background-color: #B1A6A4!important;
+        border: none;
+    }
+    .dropdown-item{
+        color: #F2F1EF!important;
+    }
+
 </style>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md bg-navbar navbar-light shadow-sm">
+        <nav class="navbar navbar-expand-md bg-navbar navbar-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'AmazonGuestBook') }}

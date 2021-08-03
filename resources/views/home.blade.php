@@ -19,8 +19,8 @@
                 <p>Hello, welcome to .....</p>
                 <h3>Let's get Started</h3>
                 <div class="col-md-8 offset-md-4">
-                    <a class="btn bg-dark text-white" href="/create-guestbook">Create guestbook</a>
-                    <a class="btn bg-dark text-white" href="/sign-guestbook">Sign guestbook</a>
+                    <a class="btn btn-common text-white" href="/create-guestbook">Create guestbook</a>
+                    <a class="btn btn-common text-white" href="/sign-guestbook">Sign guestbook</a>
                 </div>
             </div>
         </div>
