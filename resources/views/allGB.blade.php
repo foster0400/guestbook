@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h3>My Guestbook</h3>
-        @if($events)
+        @if(!$events->isEmpty())
             <div class="row">
                 <div class="col">
                     <strong>Event ID</strong>
