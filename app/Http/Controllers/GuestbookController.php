@@ -30,7 +30,7 @@ class GuestbookController extends Controller
                 if($user->id==$event->creator_id){
                     $isCreator=1;
                 }else{
-                    $exist = $user->sign->where('id',$request->eventId)->first();
+                    $exist = $user->sign->where('event_id',$request->eventId)->first();
                     if($exist){
                         $isSigned=1;
                         dd("masuk");
