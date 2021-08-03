@@ -30,17 +30,18 @@ class GuestbookController extends Controller
                 if($user->id==$event->creator_id){
                     $isCreator=1;
                 }else{
-                    
                     $exist = $user->sign->where('id',$request->eventId)->first();
                     if($exist){
                         $isSigned=1;
+                        dd("masuk");
                     }
+                    dd("habis if");
                 }
             }else{
                 $message="NOT FOUND";
             }
         }
-        return view('sign', ['exist'=>$exist,'isSigned'=>$isSigned,'isCreator'=>$isCreator, 'user'=>$user, 'event'=>$event, 'eventId'=>$eventId, 'message'=>$message, 'acceptance'=>$acceptance]);
+        return view('sign', ['isSigned'=>$isSigned,'exist'=>$exist,'isCreator'=>$isCreator, 'user'=>$user, 'event'=>$event, 'eventId'=>$eventId, 'message'=>$message, 'acceptance'=>$acceptance]);
     }
 
     public function create(Request $request){
