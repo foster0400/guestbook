@@ -82,13 +82,13 @@
                         @error('address')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
-                                <script>alert($message)</script>;
+                                <script>alert({{$message}})</script>;
                             </span>
                         @enderror
                         @error('message')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
-                                <script>alert($message)</script>;
+                                <script>alert({{$message}})</script>;
                             </span>
                         @enderror
                     </form>
