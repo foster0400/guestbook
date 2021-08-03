@@ -13,7 +13,7 @@
     <form method="GET" action="/sign-guestbook" class="form-inline my-2 row justify-content-center" style="width:60%">
         
         <input type="text" name="eventId" value="{{$eventId}}" placeholder="Input event ID" class="form-control mr-sm-2" style="width:85%">
-        <button type="submit" class="btn btn-primary my-2 my-sm-0">Search</button>
+        <button type="submit" class="btn btn-common my-2 my-sm-0">Search</button>
     </form>
     
     @if($event)
