@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <h3>Create Guestbook</h3>
         <form method="POST" action="/create-guestbook">
             @csrf
 
