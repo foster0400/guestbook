@@ -30,13 +30,14 @@
         background: #343a40;
         color: white !important;
     }
-    .navbar{
-        color:#B1A6A4
+    .bg-navbar{
+        background-color:#B1A6A4;
+        color: #F2F1EF;
     }
 </style>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md bg-navbar navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'AmazonGuestBook') }}
@@ -77,7 +78,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/profile">{{ __('Profile') }}</a>
+                                    <a class="dropdown-item" href="/profile"><span class="fas fa-user-circle"></span> {{ ('Profile') }}</a>
+                                    <a class="dropdown-item" href="/myguestbook"><span class="fas fa-book"></span> {{ ('My Guestbook') }}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
