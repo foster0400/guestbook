@@ -54,7 +54,6 @@
         </form>
 
         @else
-            <h5>Created by : {{$event->user->name}}</h5>
             <div class="row justify-content-center">
                 <h3>{{$event->title}}</h3>
             </div>
