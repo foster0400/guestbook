@@ -11,7 +11,7 @@ class Sign extends Model
     {
         return $this->belongsTo(User::class, 'signer_id', 'id');
     }
-    public function sign()
+    public function event()
     {
         return $this->belongsTo(Event::class, 'event_id', 'id');
     }
