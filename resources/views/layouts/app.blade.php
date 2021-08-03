@@ -57,8 +57,8 @@
         color: #F2F1EF!important;
     }
     textarea:focus,.formcontrol:focus,.uneditable-input:focus,input[type="password"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password-confirm"]:focus{
-        border-color: #413f3d;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #413f3d;
+        border-color: #413f3d!important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #413f3d!important;
         outline : 0 none;
     }
 
