@@ -56,6 +56,11 @@
     .dropdown-item{
         color: #F2F1EF!important;
     }
+    input[type="password"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password-confirm"]:focus{
+        border-color: rgba(126,239,104,0.8);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126,239,104,0.6);
+        outline : 0 none;
+    }
 
 </style>
 <body>
