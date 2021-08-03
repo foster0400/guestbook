@@ -33,9 +33,7 @@ class GuestbookController extends Controller
                     $exist = $user->sign->where('event_id',$request->eventId)->first();
                     if($exist){
                         $isSigned=1;
-                        dd("masuk");
                     }
-                    dd("habis if");
                 }
             }else{
                 $message="NOT FOUND";
