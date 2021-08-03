@@ -44,6 +44,7 @@
     }
     .dropdown-menu{
         background-color: #B1A6A4!important;
+        border: none;
     }
     .dropdown-item{
         color: #F2F1EF!important;
