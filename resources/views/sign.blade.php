@@ -62,18 +62,29 @@
             </div>
 
             @if($acceptance)
-                @if($isSigned){
+                @if($isSigned)
                     <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
                     <input type="text" class="form-control col-md-4" name="address" value="{{$exist->address}}" readonly>
                     <input type="text" class="form-control col-md-4" name="message" value="{{$exist->message}}" readonly>
-                }
+
                 @else
+                        @error('message')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
                         @csrf
                         <!-- The value will be changed later !!! -->
                         <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
-                        <input type="text" class="form-control col-md-4" name="address" value="{{$user->address}}" placeholder ="Address">
-                        <input type="text" class="form-control col-md-4" name="message" value="" placeholder="Message">
+                        <input type="text" class="form-control col-md-4 @error('address') is-invalid @enderror" name="address" value="{{$user->address}}" placeholder ="Address">
+
+                        @error('address')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                        <input type="text" class="form-control col-md-4 @error('message') is-invalid @enderror" name="message" value="" placeholder="Message">
                         <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fas fa-check"></span></button>
                         <input type="hidden" name="eventId" value={{$eventId}}>
                     </form>
