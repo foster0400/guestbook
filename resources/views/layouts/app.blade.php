@@ -30,7 +30,9 @@
         background: #343a40;
         color: white !important;
     }
-    
+    .navbar{
+        color:#B1A6A4
+    }
 </style>
 <body>
     <div id="app">
