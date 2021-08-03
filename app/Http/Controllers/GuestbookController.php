@@ -86,12 +86,8 @@ class GuestbookController extends Controller
     }
 //new
     public function viewAll(){
-        $myEvents = Event::where('creator_id',Auth()->user()->id);
-    }
-
-    public function viewGB($id){
-        $event = Event::where('id',$id)->first;
-        $guest = Sign::where('event_id',$id)->paginate(10);
+        $events = Event::where('creator_id',Auth()->user()->id)->get()->reverse();
+        return view('allGB',['events'=>$events]);
     }
 
     public function myProfile(){
