@@ -18,7 +18,7 @@
     
     @if($event)
         <h5>Created by : {{$event->user->name}}</h5>
-        @if(isCreator)
+        @if($isCreator)
         <form method="POST" action="/update-guestbook">
             @csrf
 
