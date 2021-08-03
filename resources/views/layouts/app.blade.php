@@ -61,6 +61,16 @@
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #413f3d!important;
         outline : 0 none;
     }
+    body{
+        background-image: url('{{asset('storage/background.png')}}');
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
 
 </style>
 <body>
