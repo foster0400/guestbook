@@ -11,6 +11,10 @@ class Sign extends Model
     {
         return $this->belongsTo(User::class, 'signer_id', 'id');
     }
+    public function sign()
+    {
+        return $this->belongsTo(Event::class, 'event_id', 'id');
+    }
 
     protected $table = 'signs';
     protected $fillable = [
