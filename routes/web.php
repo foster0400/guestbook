@@ -32,4 +32,6 @@ Route::group(['middleware' => 'user'], function () {
     Route::post('/update-profile', 'UserController@update');
     Route::get('/myguestbook','GuestbookController@viewAll');
 });
-Auth::routes(['verify' => true]);
+Route::get('/verify',function(){
+    return view('/black-bits/laravel-cognito-auth/verify');
+});
