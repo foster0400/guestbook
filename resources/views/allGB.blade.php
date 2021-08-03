@@ -24,6 +24,6 @@
             @endforeach
         @else
             <h5>You have not created any guestbook yet, <a href="/create-guestbook">click here to create one</a></h5>
-
+        @endif
     </div>
 @endsection
