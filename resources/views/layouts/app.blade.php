@@ -32,8 +32,17 @@
     }
     .bg-navbar{
         background-color:#B1A6A4;
-        color: #F2F1EF;
     }
+    .nav-item .nav-link{
+        color: #F2F1EF!important;
+    }
+    .nav-item .nav-link:hover{
+        color: black!important;
+    }
+    .navbar-brand{
+        color: #F2F1EF!important;
+    }
+
 </style>
 <body>
     <div id="app">
