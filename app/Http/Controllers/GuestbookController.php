@@ -33,6 +33,7 @@ class GuestbookController extends Controller
                     $exist = $user->sign->where('id',$request->eventId)->first();
                     if($exist){
                         $isSigned=1;
+                        dd($user->event->sign);
                     }
                 }
             }else{
