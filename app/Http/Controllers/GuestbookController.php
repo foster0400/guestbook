@@ -17,6 +17,7 @@ class GuestbookController extends Controller
         $isCreator = 0;
         $isSigned = 0;
         $eventId = $request->eventId;
+        $exist=NULL;
         $event=NULL;
         $message=NULL;
         $acceptance=NULL;
