@@ -3,24 +3,27 @@
 @section('content')
     <div class="container">
         <h3>My Guestbook</h3>
-        <div class="row">
-            <div class="col">
-                <strong>Event ID</strong>
-            </div>
-            <div class="col">
-                <strong>Event Title</strong>
-            </div>
-        </div>
-        @foreach($events as $event)
+        @if($events)
             <div class="row">
                 <div class="col">
-                    <strong>$event->id</strong>
+                    <strong>Event ID</strong>
                 </div>
                 <div class="col">
-                    <strong>$event->title</strong>
+                    <strong>Event Title</strong>
                 </div>
             </div>
-        @endforeach
+            @foreach($events as $event)
+                <div class="row">
+                    <div class="col">
+                        <strong>$event->id</strong>
+                    </div>
+                    <div class="col">
+                        <strong>$event->title</strong>
+                    </div>
+                </div>
+            @endforeach
+        @else
+            <h5>You have not created any guestbook yet, <a href="/create-guestbook">click here to create one</a></h5>
 
     </div>
 @endsection
