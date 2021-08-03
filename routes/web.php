@@ -35,3 +35,4 @@ Route::group(['middleware' => 'user'], function () {
 Route::get('/verify',function(){
     return view('/vendor/black-bits/laravel-cognito-auth/verify');
 });
+Auth::routes(['verify' => true]);
