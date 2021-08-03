@@ -20,11 +20,15 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/sign-guestbook', 'GuestbookController@search');
-Route::post('/sign-guestbook', 'GuestbookController@sign');
-Route::get('/create-guestbook', function(){return view('createGB');});
-Route::post('/create-guestbook', 'GuestbookController@create');
-Route::post('/update-guestbook', 'GuestbookController@updateGB');
-Route::get('/profile', 'UserController@view');
-Route::post('/update-profile', 'UserController@update');
-Route::get('/myguestbook','GuestbookController@viewAll');
+
+
+Route::group(['middleware' => 'authenticate'], function () {
+    Route::get('/sign-guestbook', 'GuestbookController@search');
+    Route::post('/sign-guestbook', 'GuestbookController@sign');
+    Route::get('/create-guestbook', function(){return view('createGB');});
+    Route::post('/create-guestbook', 'GuestbookController@create');
+    Route::post('/update-guestbook', 'GuestbookController@updateGB');
+    Route::get('/profile', 'UserController@view');
+    Route::post('/update-profile', 'UserController@update');
+    Route::get('/myguestbook','GuestbookController@viewAll');
+});
