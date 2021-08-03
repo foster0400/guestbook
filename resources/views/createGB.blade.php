@@ -6,10 +6,10 @@
             @csrf
 
             <div class="form-group row">
-                <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Event Name') }}</label>
 
                 <div class="col-md-6">
-                    <input id="title" type="text" class="form-control @error('name') is-invalid @enderror" name="title" value="{{ old('title') }}" required autofocus>
+                    <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" required autofocus>
 
                     @error('title')
                         <span class="invalid-feedback" role="alert">
