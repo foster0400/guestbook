@@ -64,7 +64,7 @@
                 <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
                 <input type="text" class="form-control col-md-4" name="address" value="{{$exist->address}}" readonly>
                 <input type="text" class="form-control col-md-4" name="message" value="{{$exist->message}}" readonly>
-
+            @endif
             @if($acceptance)
                 @if(!$isSigned)
                     <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
