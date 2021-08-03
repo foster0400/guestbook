@@ -35,6 +35,7 @@ class GuestbookController extends Controller
         $this->validate($request, [
             'title' => ['required', 'string', 'max:255'],
         ]);
+        dd($request->description);
         Event::create([
             'title' => $request->title,
             'description' => $request->description,
