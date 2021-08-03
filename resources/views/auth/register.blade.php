@@ -43,12 +43,12 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-                                <strong style="text-justify:inter-word;color:rgba(0,0,0,0.5)">Password must have at least 8 characters long, should contain 1 Lowercase, 1 Uppercase, 1 Numeric, and 1 special character. </strong>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                                <strong style="text-justify:inter-word;color:rgba(0,0,0,0.5)">Password must have at least 8 characters long, should contain 1 Lowercase, 1 Uppercase, 1 Numeric, and 1 special character. </strong>
                             </div>
                         </div>
 
