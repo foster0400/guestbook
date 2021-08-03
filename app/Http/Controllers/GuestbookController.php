@@ -14,7 +14,6 @@ class GuestbookController extends Controller
     public function search(Request $request)
     {
         $user = Auth()->user();
-        dd($user);
         $eventId = $request->eventId;
         $event=NULL;
         $message=NULL;
