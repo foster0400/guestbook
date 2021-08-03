@@ -14,6 +14,7 @@ class GuestbookController extends Controller
     public function search(Request $request)
     {
         $user = Auth()->user();
+        $isCreator = 0;
         $eventId = $request->eventId;
         $event=NULL;
         $message=NULL;
@@ -24,11 +25,14 @@ class GuestbookController extends Controller
             #check inputted eventId exist or not
             if($event){
                 $acceptance=$event->isOpened;
+                if($user->id==$event->creator_id){
+                    $isCreator=1;
+                }
             }else{
                 $message="NOT FOUND";
             }
         }
-        return view('sign', ['user' => $user,'event' => $event,'eventId'=>$eventId,'message'=>$message,'acceptance'=>$acceptance]);
+        return view('sign', ['isCreator'=>$isCreator, 'user'=>$user, 'event'=>$event, 'eventId'=>$eventId, 'message'=>$message, 'acceptance'=>$acceptance]);
     }
 
     public function create(Request $request){
