@@ -47,6 +47,17 @@ class GuestbookController extends Controller
         ]);
         return redirect()->back();
     }
+    public function updateGB(Request $request){
+        $this->validate($request,[
+            'title' => ['required', 'string', 'max:255'],
+        ]);
+        $user = Auth()->user();
+        $my_event = $user->event;
+        dd($my_event);
+        // Event::update([
+
+        // ]);
+    }
 //new
     public function viewAll(){
         $myEvents = Event::where('creator_id',Auth()->user()->id);
