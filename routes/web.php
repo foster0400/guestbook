@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/sign-guestbook', 'GuestbookController@search');
+Route::post('/sign-guestbook', 'GuestbookController@sign');
 Route::get('/create-guestbook', function(){return view('createGB');});
 Route::post('/create-guestbook', 'GuestbookController@create');
 Route::post('/update-guestbook', 'GuestbookController@updateGB');
+
