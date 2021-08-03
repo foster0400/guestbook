@@ -81,14 +81,12 @@
                         <input type="hidden" name="eventId" value={{$eventId}}>
                         @error('address')
                             <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                                <script>alert({{$message}})</script>;
+                                <strong>*{{ $message }}</strong>
                             </span>
                         @enderror
                         @error('message')
                             <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                                <script>alert({{$message}})</script>;
+                                <strong>*{{ $message }}</strong>
                             </span>
                         @enderror
                     </form>
