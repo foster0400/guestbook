@@ -34,6 +34,9 @@
         background-color: #B1A6A4!important;
         color: #F2F1EF!important;
     }
+    .btn-common:hover{
+        background-color: #D8CFD0!important;
+    }
     .bg-navbar{
         background-color:#B1A6A4;
     }
