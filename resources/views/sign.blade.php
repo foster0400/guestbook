@@ -21,7 +21,7 @@
         @if($isCreator)
         <form method="POST" action="/update-guestbook">
             @csrf
-
+            <input type="hidden" name="eventId" value="{{$event->id}}">
             <div class="form-group row">
                 <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Event Name') }}</label>
 
