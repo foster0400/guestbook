@@ -18,7 +18,6 @@ class CreateEventsTable extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('creator_id');
             $table->string('title');
-            $table->string('image');
             $table->boolean('isOpened')->default(1);
             $table->string('description')->nullable(true);
 
