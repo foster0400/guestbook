@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <h3>My Profile</h3>
         <form method="POST" action="/update-profile">
             @csrf
 
