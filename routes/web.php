@@ -25,4 +25,6 @@ Route::post('/sign-guestbook', 'GuestbookController@sign');
 Route::get('/create-guestbook', function(){return view('createGB');});
 Route::post('/create-guestbook', 'GuestbookController@create');
 Route::post('/update-guestbook', 'GuestbookController@updateGB');
+Route::get('/view-profile', 'UserController@view');
+Route::post('/update-profile', 'UserController@update');
 
