@@ -4,64 +4,13 @@
         /* width: 100%; */
         margin:auto;
     }
-
-    @media (min-width: 700px) {
-  .form-inline label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-  }
-
-  .form-inline .form-group {
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-bottom: 0;
-  }
-
-  .form-inline .form-control {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-  }
-
-  .form-inline .form-control-plaintext {
-    display: inline-block;
-  }
-
-  .form-inline .input-group,
-  .form-inline .custom-select {
-    width: auto;
-  }
-
-  .form-inline .form-check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    padding-left: 0;
-  }
-
-  .form-inline .form-check-input {
-    position: relative;
-    flex-shrink: 0;
-    margin-top: 0;
-    margin-right: 0.25rem;
-    margin-left: 0;
-  }
-
-  .form-inline .custom-control {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .form-inline .custom-control-label {
-    margin-bottom: 0;
-  }
-}
-
+    
+    @media only screen and (min-width: 600px) {
+        .form-control {
+            display: block;
+            width: 100%;
+        }
+    }
 </style>
 @section('content')
 
