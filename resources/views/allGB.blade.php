@@ -5,7 +5,7 @@
         <h3 style="text-align:center">My Guestbook</h3>
         @if(!$events->isEmpty())
             <div class="row">
-                <div class="col">
+                <div class="col-sm-2">
                     <strong>Event ID</strong>
                 </div>
                 <div class="col">
@@ -14,7 +14,7 @@
             </div>
             @foreach($events as $event)
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-2">
                         <strong>{{$event->id}}</strong>
                     </div>
                     <div class="col">
