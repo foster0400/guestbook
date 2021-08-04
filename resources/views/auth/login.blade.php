@@ -1,5 +1,11 @@
 @extends('layouts.app')
-
+<style>
+    .row .col-md-8 .card{
+        border: 2px solid #F2F1EF!important;
+        background-color:#F2F1EF!important;
+        overflow: hidden;
+    }
+</style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
