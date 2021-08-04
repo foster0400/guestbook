@@ -88,7 +88,7 @@
         
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-common">
                                     {{ __('Update') }} 
                                 </button>
                             </div>
@@ -103,11 +103,11 @@
                                 <input id="status" type="hidden" class="form-control" name="status" value="{{$acceptance}}" readonly>
                                     
                                 @if($acceptance)
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-danger">
                                         {{ __('Close The Access') }} 
                                     </button>  
                                 @else
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-success">
                                         {{ __('Open The Access') }} 
                                     </button>
                                 @endif
