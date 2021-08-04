@@ -3,47 +3,65 @@
     .card{
         width: 80%;
         margin: auto;
-        padding-bottom: 10px;
+        padding: 5%;
         border: 2px solid black!important;
+    }
+    .col-sm-3 img{
+        max-width:auto;
+        max-height:fit-content;
+    }  
+    .row-man{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: fit-content;
+        justify-content: space-around;
+    }
+    .col-btn{
+        margin:10px;
+    }
+    .col-man-40{
+        display: flex;
+        direction: column;
+        width: 40%;
+    }
+    .col-man-45{
+        display: flex;
+        direction: column;
+        width: 45%;
+    }
+    .col-btn a{
+        font-size: 1.5vw;
+    }
+    h1{
+        text-align: center;
     }
 
 </style>
 @section('content')
 <div class="container">
     <div class="card">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                    <!-- <div class="card-header">{{ __('Dashboard') }}</div>
-
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        {{ __('You are logged in!') }}
-                    </div> -->
-                    <div class="row">
-                        <div class="column">
-                            <img class="img-person" src="{{asset('storage/person.png')}}">
-                        </div>
-                        <div class="column">
-                            <div class="card-body">
-                                <p>Hello, welcome to .....</p>
-                                <h1>AMAZON GUESTBOOK<h1>
-                                <h3>Let's get Started</h3>
-                                <br>
-                                <br>
-                                <div class="col-md-10 offset-md-4">
-                                    <a class="btn btn-common text-white" href="/create-guestbook">Create guestbook</a>
-                                    <a class="btn btn-common text-white" href="/sign-guestbook">Sign guestbook</a>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    
+        <div class="row-man">
+            <div class="col-man-40">
+                <img class="img-person" src="{{asset('storage/person.png')}}">
             </div>
+            <div>
+                <div class="row-man"><h3 style="font-size:2vw;">Hello, welcome to .....</h3></div>
+                <div class="row-man"><h1 style="font-size:4vw;">AMAZON GUESTBOOK<h1></div>
+                <div class="row-man"><h3 style="font-size:2vw;">Let's get Started</h3></div>
+                <div class="row-man">
+                    <div class="col-btn">
+                        <a class="btn btn-common text-white" href="/create-guestbook">Create guestbook</a>
+                    </div>
+                    <div class="col-btn">
+                        <a class="btn btn-common text-white" href="/sign-guestbook">Sign guestbook</a>
+                    </div>
+                </div>
+                
+            </div>   
+                    
+                    
+            
         </div>
     </div>
 </div>
