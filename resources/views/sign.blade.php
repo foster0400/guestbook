@@ -67,7 +67,7 @@
                 </div>
             </form>
             
-            <form method="POST" action="/update-guestbook">
+            <form method="POST" action="/change-mode">
                 @csrf
                 @if($acceptance)
                     <div class="form-group row mb-0">
