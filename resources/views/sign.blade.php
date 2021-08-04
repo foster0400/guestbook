@@ -46,6 +46,7 @@
                 </div>
 
                 <div class="form-group row">
+                    <input type="hidden" name="eventId" value="{{$event->id}}">
                     <label for="status" class="col-md-4 col-form-label text-md-right">{{ __('Signing status') }}</label>
                     @if($acceptance)
                         <div class="col-md-6">
