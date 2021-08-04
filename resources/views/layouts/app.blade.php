@@ -82,7 +82,7 @@
     }
     .box-content{
         background-color: #F2F1EF!important;
-        width: 100%;
+        width: 1300px%;
         height: 100%;
         margin: auto;
         padding-top: 50px;
