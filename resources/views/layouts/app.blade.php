@@ -79,6 +79,7 @@
         padding-top: 50px;
         padding-left: 25px;
         padding-right: 25px;
+        padding-bottom: 100px;
     }
     .box-content{
         background-color: #F2F1EF!important;
@@ -88,7 +89,6 @@
         padding-top: 50px;
         padding-left: 25px;
         padding-right: 25px;
-        padding-bottom: 100px;
     }
     .card{
         border: none!important;
