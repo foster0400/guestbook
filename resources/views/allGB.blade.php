@@ -30,6 +30,7 @@
                         </div>
                     </div>
                     @foreach($events as $event)
+                    <a href="/sign-guestbook?eventId={{$event->id}}">
                         <div class="row item">
                             <div class="col-sm-3 center-block text-center">
                                 <strong>{{$event->id}}</strong>
@@ -38,6 +39,7 @@
                                 <strong>{{$event->title}}</strong>
                             </div>
                         </div>
+                    </a>
                     @endforeach
                 @else
                     <h5>You have not created any guestbook yet, <a href="/create-guestbook">click here to create one</a></h5>
