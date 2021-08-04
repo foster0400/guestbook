@@ -93,6 +93,21 @@
     .card{
         border: none!important;
     }
+    .card{
+        border: 2px solid #B1A6A4!important;
+        background-color:#B1A6A4!important;
+        overflow: hidden;
+    }
+    .bg-card-header{
+        background-color:#B1A6A4!important;
+        color: #F2F1EF!important;
+        font-size: 1.3rem;
+        border: none;
+    }
+    .bg-card-body{
+        background-color: #697184!important;
+        border: none;
+    }
 
 
 </style>
