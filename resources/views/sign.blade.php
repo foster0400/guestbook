@@ -15,7 +15,7 @@
             margin-left: auto;
         }
     }
-    @media only screen and (min-width: 904px) {
+    @media only screen and (min-width: 1200px) {
         .identity .form-control {
             margin-right: 2px;
             margin-bottom: 0px;
