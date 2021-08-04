@@ -4,11 +4,11 @@
         /* width: 100%; */
         margin:auto;
     }
-    @media (min-width: 576px){
+    /* @media (min-width: 576px){
         .form-inline .form-control {
             width:max;
         }
-    }
+    } */
 </style>
 @section('content')
 
