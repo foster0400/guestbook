@@ -9,6 +9,7 @@
         .identity .form-control {
             display: block!important;
             width: 100%!important;
+            margin-bottom: 10px;
         }
     }
 </style>
