@@ -2,6 +2,7 @@
 <style>
     .row{
         border-bottom: 1px solid black;
+        width: fit-content;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
