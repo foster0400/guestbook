@@ -9,9 +9,10 @@
         .identity{
             display: block!important;
             width: 100%!important;
-            margin-bottom: 10px;
+            
         }
         .btn-right{
+            margin-top: 10px;
             margin-left: auto;
         }
     }
