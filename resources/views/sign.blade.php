@@ -7,8 +7,8 @@
     
     @media only screen and (min-width: 576px) {
         .form-inline .form-control {
-            display: block;
-            width: 100%;
+            display: block!important;
+            width: 100%!important;
         }
     }
 </style>
