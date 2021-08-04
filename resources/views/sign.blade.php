@@ -15,17 +15,15 @@
             margin-left: auto;
         }
     }
-    /* @media only screen and (min-width: 691px) {
+    @media only screen and (min-width: 744px) {
         .identity .form-control {
-            display: inline-block!important;
-            width: auto!important;
-            vertical-align: middle!important;
+            margin-right: 2px;
             margin-bottom: 0px;
         }
         .btn-right{
             margin-left: none;
         }
-    } */
+    }
 </style>
 @section('content')
 
