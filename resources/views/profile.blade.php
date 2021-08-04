@@ -2,7 +2,6 @@
 <style>
     .card{
         margin: auto;
-        padding-top: 20px;
         padding-bottom: 20px;
     }
     .card-header{
