@@ -11,7 +11,7 @@
 @section('content')
     <div class="container">
         <div class="card">
-            <div class="card-header">
+            <div class="card-header text-center">
                 <h3>My Profile</h3>
             </div>
             <div class="card-body">

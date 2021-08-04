@@ -21,6 +21,9 @@
     a:hover{
         color: #B1A6A4!important;
     }
+    .bg-header{
+        background-color: #697184;
+    }
     
 </style>
 @section('content')
@@ -29,7 +32,7 @@
                 <div class = "card-header text-center bg-card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-card-body">
                 @if(!$events->isEmpty())
-                    <div class="row bg-dark text-white">
+                    <div class="row bg-header text-white">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-3 center-block text-center">
                             <strong>Event ID</strong>
