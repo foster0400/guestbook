@@ -17,8 +17,8 @@
     }
     @media only screen and (min-width: 691px) {
         .identity .form-control {
-            display: inline-block;
-            width: auto;
+            display: inline-block!important;
+            width: auto!important;
             vertical-align: middle;
         }
         .btn-right{
