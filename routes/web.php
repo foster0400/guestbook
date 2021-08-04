@@ -31,4 +31,5 @@ Route::group(['middleware' => 'user'], function () {
     Route::get('/profile', 'UserController@view');
     Route::post('/update-profile', 'UserController@update');
     Route::get('/myguestbook','GuestbookController@viewAll');
+    Route::post('/change-mode','GuestbookController@changeMode');
 });
