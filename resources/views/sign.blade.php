@@ -5,8 +5,8 @@
         margin:auto;
     }
     
-    @media only screen and (max-width: 700px) {
-        .form-control {
+    @media only screen and (min-width: 576px) {
+        .form-inline .form-control {
             display: block;
             width: 100%;
         }
