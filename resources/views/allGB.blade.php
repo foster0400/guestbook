@@ -4,6 +4,9 @@
         /* margin-left: auto;
         margin-right: auto;
         width: max-content; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
