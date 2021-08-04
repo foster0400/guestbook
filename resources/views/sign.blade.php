@@ -4,9 +4,11 @@
         /* width: 100%; */
         margin:auto;
     }
-    
-
-
+    @media only screen and (max-width: 600px) {
+        .identity input {
+            width: 100%;
+        }
+    }
 </style>
 @section('content')
 
@@ -32,7 +34,7 @@
             <form method="POST" action="/update-guestbook">
                 @csrf
                 <input type="hidden" name="eventId" value="{{$event->id}}">
-                <div class="form-inline row">
+                <div class="form-group row">
                     <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Event Name') }}</label>
 
                     <div class="col-md-6">
@@ -110,7 +112,7 @@
             @endif
             @if($acceptance)
                 @if(!$isSigned)
-                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
+                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between identity">
                         @csrf
                         <!-- The value will be changed later !!! -->
                         <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
