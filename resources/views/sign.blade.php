@@ -72,13 +72,13 @@
                 <input type="hidden" name="eventId" value="{{$event->id}}">
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
-                        @if($event->isOpened)
-                            <input id="status" type="hidden" class="form-control" name="status" value="true" readonly>
+                        <input id="status" type="hidden" class="form-control" name="status" value="{{$acceptance}}" readonly>
+                            
+                        @if($acceptance)
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Close The Access') }} 
                             </button>  
                         @else
-                            <input id="status" type="hidden" class="form-control" name="status" value="false" readonly>
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Open The Access') }} 
                             </button>
