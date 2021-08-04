@@ -83,7 +83,7 @@
     }
     .box-content{
         background-color: #F2F1EF!important;
-        width: auto;
+        width: 100%;
         height: 100%;
         margin: auto;
         padding-top: 50px;
