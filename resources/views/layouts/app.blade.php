@@ -93,7 +93,7 @@
    
     .card{
         border: 2px solid #F2F1EF!important;
-        background-color:#F2F1EFimportant;
+        background-color:#F2F1EF!important;
         overflow: hidden;
     }
     .bg-card-header{
