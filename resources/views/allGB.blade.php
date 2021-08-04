@@ -1,27 +1,29 @@
 @extends('layouts.app')
-
+<style>
+    .row{
+        border-bottom: 1px solid black;
+    }
+</style>
 @section('content')
 <div class="container">
-    <div class = "row justify-content-center">
-        <div class = "col-md center-block text-center">
             <div class="card">
                 <div class = "card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
                 @if(!$events->isEmpty())
-                    <div class="row justify-content-center">
-                        <div class="col-sm-3 center-block text-center"style="border:1px solid black">
+                    <div class="row justify-content-center bg-dark text-white">
+                        <div class="col-sm-3 center-block text-center">
                             <strong>Event ID</strong>
                         </div>
-                        <div class="col-sm-5 center-block text-center"style="border:1px solid black">
+                        <div class="col-sm-5 center-block text-center">
                             <strong>Event Title</strong>
                         </div>
                     </div>
                     @foreach($events as $event)
                         <div class="row justify-content-center">
-                            <div class="col-sm-3 center-block text-center"style="border:1px solid black">
+                            <div class="col-sm-3 center-block text-center">
                                 <strong>{{$event->id}}</strong>
                             </div>
-                            <div class="col-sm-5 center-block text-center"style="border:1px solid black">
+                            <div class="col-sm-5 center-block text-center">
                                 <strong>{{$event->title}}</strong>
                             </div>
                         </div>
@@ -31,8 +33,6 @@
                 @endif
                 </div>
             </div>
-        </div>
-    </div>
 
 </div>
     <!-- <div class="container">
