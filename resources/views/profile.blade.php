@@ -1,5 +1,11 @@
 @extends('layouts.app')
-
+<style>
+    .card{
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+</style>
 @section('content')
     <div class="container">
         <div class="card">
