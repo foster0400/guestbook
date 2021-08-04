@@ -45,6 +45,19 @@
                     </div>
                 </div>
 
+                <div class="form-group row">
+                    <label for="status" class="col-md-4 col-form-label text-md-right">{{ __('Signing status') }}</label>
+                    @if($acceptance)
+                        <div class="col-md-6">
+                            <input id="status" type="text" class="form-control" name="status" value="Enable signing" required autofocus>
+                        </div>
+                    @else
+                        <div class="col-md-6">
+                            <input id="status" type="text" class="form-control" name="status" value="Disable signing" required autofocus>
+                        </div>
+                    @endif
+                </div>
+
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         <button type="submit" class="btn btn-primary">
@@ -52,6 +65,27 @@
                         </button>
                     </div>
                 </div>
+            </form>
+            
+            <form method="POST" action="/update-guestbook">
+                @csrf
+                @if($acceptance)
+                    <div class="form-group row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Close The Access') }} 
+                            </button>
+                        </div>
+                    </div>
+                @else
+                    <div class="form-group row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Open The Access') }} 
+                            </button>
+                        </div>
+                    </div>
+                @endif
             </form>
 
         @else
