@@ -115,7 +115,7 @@
                         </div>
                     </form>
         
-                    @foreach($event->sign->get() as $sign)
+                    @foreach($event->sign as $sign)
                         {{$sign->signer_id}}
                         {{$sign->adress}}
                         {{$sign->message}}
