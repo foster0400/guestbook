@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-box">
-        <h3>My Profile</h3>
+    <div class="container">
+        <div class="card">
+            <h3>My Profile</h3>
         <form method="POST" action="/update-profile">
             @csrf
 
@@ -42,5 +43,7 @@
                 </div>
             </div>
         </form>
+        </div>
+        
     </div>
 @endsection

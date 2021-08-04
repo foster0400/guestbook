@@ -63,7 +63,8 @@
     }
     body{
         background-image: url('{{asset('storage/background.png')}}');
-        background-size: cover;
+        background-repeat:repeat;
+        background-color:#697184;
         position: absolute;
         top: 0;
         left: 0;
@@ -71,25 +72,22 @@
         height: 100%;
         z-index: -1;
     }
-    .container-box{
-        background-color: #F2F1EF!important;
-        width: 900px;
-        height: auto;
-        margin: auto;
-        padding-top: 50px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 100px;
-    }
-    .box-content{
-        background-color: #F2F1EF!important;
+    .img-person{
         width: 100%;
         height: 100%;
-        margin: auto;
-        padding-top: 50px;
-        padding-left: 25px;
-        padding-right: 25px;
     }
+    .column {
+    float: left;
+    width: 100%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
    
     .card{
         border: 2px solid #F2F1EF!important;
