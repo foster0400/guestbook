@@ -21,18 +21,6 @@
             width: auto!important;
             vertical-align: middle!important;
             margin-bottom: 0px;
-            margin: none;
-        }
-        .btn-right{
-            margin-left: none;
-        }
-    }
-    @media only screen and (min-width: 901px) {
-        .identity {
-            display: inline-block!important;
-            width: auto!important;
-            vertical-align: middle!important;
-            margin-right: 3px;
         }
         .btn-right{
             margin-left: none;
