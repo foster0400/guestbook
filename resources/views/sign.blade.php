@@ -49,11 +49,11 @@
                     <label for="status" class="col-md-4 col-form-label text-md-right">{{ __('Signing status') }}</label>
                     @if($acceptance)
                         <div class="col-md-6">
-                            <input id="status" type="text" class="form-control" name="status" value="Enable signing" required autofocus>
+                            <input id="status" type="text" class="form-control" name="status" value="Enable signing" readonly>
                         </div>
                     @else
                         <div class="col-md-6">
-                            <input id="status" type="text" class="form-control" name="status" value="Disable signing" required autofocus>
+                            <input id="status" type="text" class="form-control" name="status" value="Disable signing" readonly>
                         </div>
                     @endif
                 </div>
