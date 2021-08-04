@@ -123,7 +123,7 @@
                         <div class="col-sm-2 center-block text-center">
                             <strong>Address</strong>
                         </div>
-                        <div class="col-sm-5 center-block text-center">
+                        <div class="col-sm-6 center-block text-center">
                             <strong>Message</strong>
                         </div>
                         <div class="col-sm-1"></div>
@@ -137,7 +137,7 @@
                             <div class="col-sm-2 center-block text-center">
                                 <strong>{{$sign->address}}</strong>
                             </div>
-                            <div class="col-sm-5 center-block text-center">
+                            <div class="col-sm-6 center-block text-center">
                                 <strong>{{$sign->message}}</strong>
                             </div>
                             <div class="col-sm-1"></div>
