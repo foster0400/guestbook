@@ -112,10 +112,31 @@
                         </div>
                     </form>
         
+                    <div class="row">
+                        <div class="column">
+                            Name
+                        </div>
+                        <div class="column">
+                            Address
+                        </div>
+                        <div class="column">
+                            Message
+                        </div>
+                    </div>
                     @foreach($event->sign as $sign)
-                        {{$sign->user->name}}
-                        {{$sign->address}}
-                        {{$sign->message}}
+                        <div class="row">
+                            <div class="column">
+                                {{$sign->user->name}}
+                            </div>
+                            <div class="column">
+                                {{$sign->address}}
+                            </div>
+                            <div class="column">
+                                {{$sign->message}}
+                            </div>
+                        </div>
+                        
+                        
                     @endforeach
                 @else
                     <div class="row justify-content-center">
