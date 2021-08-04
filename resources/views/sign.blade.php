@@ -1,6 +1,7 @@
 @extends('layouts.app')
 <style>
     .search form{
+        width: 100%;
         margin:auto;
     }
 </style>
