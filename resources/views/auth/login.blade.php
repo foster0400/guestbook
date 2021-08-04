@@ -1,17 +1,17 @@
 @extends('layouts.app')
 <style>
-    .row .col-md-8 .card{
+    .card{
         border: 2px solid #F2F1EF!important;
         background-color:#F2F1EF!important;
         overflow: hidden;
     }
-    .row .col-md-8 .bg-card-header{
+    .card-header{
         background-color:#B1A6A4!important;
         color: #413f3d!important;
         font-size: 1.3rem;
         border: none;
     }
-    .row .col-md-8 .bg-card-body{
+    .card-body{
         background-color: #f2f1ef!important;
         border: none;
     }
