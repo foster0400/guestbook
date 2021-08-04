@@ -10,7 +10,7 @@
         border-bottom: 1px solid #B1A6A4;
     }
     .item:hover{
-        background-color: rgba(0,0,0,0.5)!important;
+        background-color: rgba(0,0,0,0.1)!important;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
