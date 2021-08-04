@@ -5,7 +5,7 @@
         margin-right: auto;
         padding-top: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #B1A6A4;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
@@ -16,8 +16,15 @@
         font-size: 1.3rem;
     }
     .bg-card-body{
-        background-color: #F2F1EF!important;
+        background-color: #697184!important;
     }
+    a{
+        color: #F2F1EF!important;
+    }
+    a:hover{
+        color: #B1A6A4!important;
+    }
+    
 </style>
 @section('content')
 <div class="container">
