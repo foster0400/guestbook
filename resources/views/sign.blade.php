@@ -113,7 +113,7 @@
                     </form>
         
                     <div class="row bg-header text-white">
-                        <div class="col-sm-2"></div>
+                        <div class="col-sm-3"></div>
                         <div class="col-sm-3 center-block text-center">
                             <strong>Name</strong>
                         </div>
@@ -123,11 +123,11 @@
                         <div class="col-sm-7 center-block text-center">
                             <strong>Message</strong>
                         </div>
-                        <div class="col-sm-2"></div>    
+                        <div class="col-sm-3"></div>    
                     </div>
                     @foreach($event->sign as $sign)
                         <div class="row item">
-                            <div class="col-sm-2"></div>
+                            <div class="col-sm-3"></div>
                             <div class="col-sm-3 center-block text-center">
                                 <strong>{{$sign->user->name}}</strong>
                             </div>
@@ -137,7 +137,7 @@
                             <div class="col-sm-7 center-block text-center">
                                 <strong>{{$sign->message}}</strong>
                             </div>
-                            <div class="col-sm-2"></div>
+                            <div class="col-sm-3"></div>
                         </div>
                     </a>
                     @endforeach
