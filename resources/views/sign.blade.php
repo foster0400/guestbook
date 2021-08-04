@@ -4,16 +4,13 @@
         /* width: 100%; */
         margin:auto;
     }
-    
-    @media only screen and (min-width: 576px) {
-        .identity .form-control {
+    .identity .form-control {
             display: block!important;
             width: 100%!important;
             margin-bottom: 10px;
         }
-        .btn-right{
-            margin-left: auto;
-        }
+    .btn-right{
+        margin-left: auto;
     }
     @media only screen and (min-width: 1000px) {
         .identity .form-control {
@@ -115,10 +112,31 @@
                         </div>
                     </form>
         
-                    @foreach($event->sign->get() as $sign)
-                        {{$sign->signer_id}}
-                        {{$sign->adress}}
-                        {{$sign->message}}
+                    <div class="row">
+                        <div class="column">
+                            Name
+                        </div>
+                        <div class="column">
+                            Address
+                        </div>
+                        <div class="column">
+                            Message
+                        </div>
+                    </div>
+                    @foreach($event->sign as $sign)
+                        <div class="row">
+                            <div class="column">
+                                {{$sign->user->name}}
+                            </div>
+                            <div class="column">
+                                {{$sign->address}}
+                            </div>
+                            <div class="column">
+                                {{$sign->message}}
+                            </div>
+                        </div>
+                        
+                        
                     @endforeach
                 @else
                     <div class="row justify-content-center">
