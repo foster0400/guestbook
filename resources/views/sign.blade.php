@@ -22,7 +22,7 @@
             vertical-align: middle;
         }
         .btn-right{
-            margin-left: auto;
+            margin-left: none;
         }
     }
 </style>
