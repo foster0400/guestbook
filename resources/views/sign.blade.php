@@ -5,7 +5,7 @@
         margin:auto;
     }
     
-    @media only screen and (min-width: 600px) {
+    @media only screen and (max-width: 700px) {
         .form-control {
             display: block;
             width: 100%;
