@@ -5,18 +5,28 @@
         margin-right: auto;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .item{
         border-bottom: 1px solid #B1A6A4;
+    }
+    .item:hover{
+        background-color: rgba(0,0,0,0.1)!important;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
+    }
+    .card{
+        border: 2px solid #B1A6A4!important;
     }
     .bg-card-header{
         background-color:#B1A6A4!important;
         color: #F2F1EF!important;
         font-size: 1.3rem;
+        border: none;
     }
     .bg-card-body{
         background-color: #697184!important;
+        border: none;
     }
     a{
         color: #F2F1EF!important;
