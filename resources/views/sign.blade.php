@@ -4,6 +4,11 @@
         /* width: 100%; */
         margin:auto;
     }
+    @media (min-width: 576px){
+        .form-inline .form-control {
+            width:max;
+        }
+    }
 </style>
 @section('content')
 
@@ -18,7 +23,7 @@
     <div class="search">
         <form method="GET" action="/sign-guestbook" class="form-inline my-2 row justify-content-center">
             
-            <input type="search" name="eventId" value="{{$eventId}}" placeholder="Input event ID" class="form-control mr-sm-2" style="width:60%">
+            <input type="search" name="eventId" value="{{$eventId}}" placeholder="Input event ID" class="form-control mr-sm-2" style="width:50%">
             <button type="submit" class="btn btn-common my-2 my-sm-0">Search</button>
         </form>
     </div>
