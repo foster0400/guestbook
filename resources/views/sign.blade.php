@@ -20,6 +20,7 @@
             /* display: inline-block!important;
             width: auto!important;
             vertical-align: middle!important; */
+            margin-right: 3px;
             margin-bottom: 0px;
         }
         .btn-right{
