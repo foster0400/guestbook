@@ -115,7 +115,7 @@
                         </div>
                     </form>
         
-                    @foreach(@event->sign as @sign)
+                    @foreach(@event->sign->get() as @sign)
                         {{@sign->signer_id}}
                         {{@sign->adress}}
                         {{@sign->message}}
