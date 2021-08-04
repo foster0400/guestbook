@@ -3,6 +3,9 @@
     .row{
         border-bottom: 1px solid black;
     }
+    .col{
+        border: 1px solid black;
+    }
 </style>
 @section('content')
 <div class="container">
