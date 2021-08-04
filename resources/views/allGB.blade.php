@@ -11,7 +11,7 @@
         border: 1px solid black;
     }
     .bg-card-header{
-        background-color:#B1A6A4;
+        background-color:#B1A6A4!important;
         color: #F2F1EF!important;
     }
 </style>
