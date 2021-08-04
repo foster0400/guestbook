@@ -5,7 +5,7 @@
         margin:auto;
     }
     
-    @media only screen and (min-width: 576px) {
+    @media only screen and (max-width: 700px) {
         .identity .form-control {
             display: block!important;
             width: 100%!important;
