@@ -1,5 +1,19 @@
 @extends('layouts.app')
+<style>
+    .search form{
+        /* width: 100%; */
+        margin:auto;
+    }
+    .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    }
 
+
+</style>
 @section('content')
 
 @if($message)
@@ -10,12 +24,13 @@
 @endif
 
 <div class="container">
-    <form method="GET" action="/sign-guestbook" class="form-inline my-2 row justify-content-center" style="width:60%">
-        
-        <input type="search" name="eventId" value="{{$eventId}}" placeholder="Input event ID" class="form-control mr-sm-2" style="width:85%">
-        <button type="submit" class="btn btn-common my-2 my-sm-0">Search</button>
-    </form>
-    
+    <div class="search">
+        <form method="GET" action="/sign-guestbook" class="form-inline my-2 row justify-content-center">
+            
+            <input type="search" name="eventId" value="{{$eventId}}" placeholder="Input event ID" class="form-control mr-sm-2" style="width:50%">
+            <button type="submit" class="btn btn-common my-2 my-sm-0">Search</button>
+        </form>
+    </div>
     @if($event)
         <h5>Created by : {{$event->user->name}}</h5>
         <h5>Event ID : {{$event->id}}</h5>
