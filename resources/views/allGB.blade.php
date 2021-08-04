@@ -11,6 +11,9 @@
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
     }
+    .item:hover{
+        background-color: grey;
+    }
 </style>
 @section('content')
 <div class="container">
@@ -27,7 +30,7 @@
                         </div>
                     </div>
                     @foreach($events as $event)
-                        <div class="row flex">
+                        <div class="row item">
                             <div class="col-sm-3 center-block text-center">
                                 <strong>{{$event->id}}</strong>
                             </div>
