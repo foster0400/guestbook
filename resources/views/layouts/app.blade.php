@@ -73,13 +73,12 @@
     }
     .container-box{
         background-color: #F2F1EF!important;
-        width: 1300px;
+        width: 900px;
         height: auto;
         margin: auto;
         padding-top: 50px;
         padding-left: 25px;
         padding-right: 25px;
-        padding-bottom: 100px;
     }
     .box-content{
         background-color: #F2F1EF!important;
@@ -90,7 +89,9 @@
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 100px;
-        opacity: 0.98;
+    }
+    .card{
+        border: none!important;
     }
 
 
