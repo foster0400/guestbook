@@ -13,6 +13,10 @@
     .bg-card-header{
         background-color:#B1A6A4!important;
         color: #F2F1EF!important;
+        font-size: 1.3rem;
+    }
+    .bg-card-body{
+        background-color: #F2F1EF!important;
     }
 </style>
 @section('content')
