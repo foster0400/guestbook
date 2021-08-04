@@ -21,6 +21,17 @@
             width: auto!important;
             vertical-align: middle!important; */
             margin-right: 3px;
+        }
+        .btn-right{
+            margin-left: none;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        .identity {
+            /* display: inline-block!important;
+            width: auto!important;
+            vertical-align: middle!important; */
+            margin-right: 3px;
             margin-bottom: 0px;
         }
         .btn-right{
