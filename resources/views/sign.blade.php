@@ -16,12 +16,7 @@
         }
     }
     @media only screen and (min-width: 691px) {
-        .identity {
-            /* display: inline-block!important;
-            width: auto!important;
-            vertical-align: middle!important; */
-            margin-right: 3px;
-        }
+        
         .btn-right{
             margin-left: none;
         }
