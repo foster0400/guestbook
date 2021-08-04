@@ -5,6 +5,16 @@
         background-color:#F2F1EF!important;
         overflow: hidden;
     }
+    .row .col-md-8 .bg-card-header{
+        background-color:#B1A6A4!important;
+        color: #413f3d!important;
+        font-size: 1.3rem;
+        border: none;
+    }
+    .row .col-md-8 .bg-card-body{
+        background-color: #f2f1ef!important;
+        border: none;
+    }
 </style>
 @section('content')
 <div class="container">
