@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class UserController extends Controller
 {
@@ -15,12 +16,13 @@ class UserController extends Controller
     public function update(Request $request){
         $this->validate($request ,[
             'address' => ['string', 'max:70'],
+            'name' => ['required','string', 'max:255'],
         ]);
-        if(Auth()->user()->name != $request->name){
-            $this->validate($request ,[
-                'address' => ['required','string', 'max:255'],
-            ]);
-        }
+
+        User::where('id',Auth()->user()->id)->update([
+            'name' => $request->name,
+            'address' => $request->address,
+        ]);
         return redirect()->back();
     }
 }
