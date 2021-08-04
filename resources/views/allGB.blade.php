@@ -40,10 +40,10 @@
                     <div class="row bg-header text-white">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-3 center-block text-center">
-                            <strong>Event ID</strong>
+                            <h3><strong>Event ID</strong></h3>
                         </div>
                         <div class="col-sm-5 center-block text-center">
-                            <strong>Event Title</strong>
+                            <h3><strong>Event Title</strong></h3>
                         </div>
                         <div class="col-sm-2"></div>    
                     </div>

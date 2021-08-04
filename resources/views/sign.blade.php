@@ -118,13 +118,13 @@
                         <div class="row bg-header text-white">
                             <div class="col-sm-1"></div>
                             <div class="col-sm-2 center-block text-center">
-                                <strong>Name</strong>
+                                <h3><strong>Name</strong></h3>
                             </div>
                             <div class="col-sm-2 center-block text-center">
-                                <strong>Address</strong>
+                                <h3><strong>Address</strong></h3>
                             </div>
                             <div class="col-sm-6 center-block text-center">
-                                <strong>Message</strong>
+                                <h3><strong>Message</strong></h3>
                             </div>
                             <div class="col-sm-1"></div>
                         </div>
