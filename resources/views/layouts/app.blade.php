@@ -104,6 +104,9 @@
         background-color: #f2f1ef!important;
         border: none;
     }
+    .dropdown-item:hover{
+        color: black!important;
+    }
 
 
 </style>
