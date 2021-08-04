@@ -4,8 +4,63 @@
         /* width: 100%; */
         margin:auto;
     }
-    
 
+    @media (min-width: 700px) {
+  .form-inline label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .form-inline .form-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .form-inline .form-control-plaintext {
+    display: inline-block;
+  }
+
+  .form-inline .input-group,
+  .form-inline .custom-select {
+    width: auto;
+  }
+
+  .form-inline .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-left: 0;
+  }
+
+  .form-inline .form-check-input {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 0;
+    margin-right: 0.25rem;
+    margin-left: 0;
+  }
+
+  .form-inline .custom-control {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-inline .custom-control-label {
+    margin-bottom: 0;
+  }
+}
 
 </style>
 @section('content')
@@ -32,7 +87,7 @@
             <form method="POST" action="/update-guestbook">
                 @csrf
                 <input type="hidden" name="eventId" value="{{$event->id}}">
-                <div class="form-inline row">
+                <div class="form-group row">
                     <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Event Name') }}</label>
 
                     <div class="col-md-6">
@@ -110,7 +165,7 @@
             @endif
             @if($acceptance)
                 @if(!$isSigned)
-                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
+                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between identity">
                         @csrf
                         <!-- The value will be changed later !!! -->
                         <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
