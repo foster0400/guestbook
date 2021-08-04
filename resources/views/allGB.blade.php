@@ -8,7 +8,7 @@
                 <div class="col-sm-3">
                     <strong>Event ID</strong>
                 </div>
-                <div class="col">
+                <div class="col-sm-5">
                     <strong>Event Title</strong>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                     <div class="col-sm-3">
                         <strong>{{$event->id}}</strong>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-5">
                         <strong>{{$event->title}}</strong>
                     </div>
                 </div>
