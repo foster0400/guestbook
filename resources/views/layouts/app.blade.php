@@ -90,17 +90,15 @@
         padding-left: 25px;
         padding-right: 25px;
     }
+   
     .card{
-        border: none!important;
-    }
-    .card{
-        border: 2px solid #B1A6A4!important;
-        background-color:#B1A6A4!important;
+        border: 2px solid #F2F1EF!important;
+        background-color:#F2F1EFimportant;
         overflow: hidden;
     }
     .bg-card-header{
         background-color:#B1A6A4!important;
-        color: #F2F1EF!important;
+        color: #413f3d!important;
         font-size: 1.3rem;
         border: none;
     }
