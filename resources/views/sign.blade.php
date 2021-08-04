@@ -21,6 +21,7 @@
             width: auto!important;
             vertical-align: middle!important;
             margin-bottom: 0px;
+            margin: none;
         }
         .btn-right{
             margin-left: none;
