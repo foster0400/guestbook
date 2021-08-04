@@ -133,10 +133,10 @@
                         @csrf
                         <!-- The value will be changed later !!! -->
                         <input type="text" class="form-control col-md-3 identity" value="{{$user->name}}" readonly>
-                        <input type="text" class="form-control col-md-4  identity@error('address') is-invalid @enderror" name="address" value="{{$user->address}}" placeholder ="Address">
+                        <input type="text" class="form-control col-md-4  identity @error('address') is-invalid @enderror" name="address" value="{{$user->address}}" placeholder ="Address">
 
                         
-                        <input type="text" class="form-control col-md-4  identity@error('message') is-invalid @enderror" name="message" value="" placeholder="Message">
+                        <input type="text" class="form-control col-md-4  identity @error('message') is-invalid @enderror" name="message" value="" placeholder="Message">
                         <button type="submit" class="btn btn-common btn-right my-2 my-sm-0"><span class="fas fa-check"></span> Sign!</button>
                         <input type="hidden" name="eventId" value={{$eventId}}>
                         @error('address')
