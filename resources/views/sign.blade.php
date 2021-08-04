@@ -69,7 +69,7 @@
             
             <form method="POST" action="/change-mode">
                 @csrf
-                
+                <input type="hidden" name="eventId" value="{{$event->id}}">
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         @if($acceptance)
