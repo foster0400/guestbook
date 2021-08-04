@@ -144,7 +144,7 @@
                             </div>
                         </a>
                         @endforeach
-                    
+                    @endif
                     
                 @else
                     <div class="row justify-content-center">
