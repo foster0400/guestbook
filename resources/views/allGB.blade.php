@@ -17,7 +17,7 @@
 @section('content')
 <div class="container">
             <div class="card">
-                <div class = "card-header text-center">{{__('My Guestbook')}}</div>
+                <div class = "card-header text-center bg-dark">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
                 @if(!$events->isEmpty())
                     <div class="row bg-dark text-white">
