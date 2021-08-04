@@ -1,9 +1,9 @@
 @extends('layouts.app')
 <style>
     .row{
-        margin-left: auto;
+        /* margin-left: auto;
         margin-right: auto;
-        width: max-content;
+        width: max-content; */
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     @foreach($events as $event)
-                        <div class="row">
+                        <div class="row flex">
                             <div class="col-sm-3 center-block text-center">
                                 <strong>{{$event->id}}</strong>
                             </div>
