@@ -92,10 +92,9 @@ class GuestbookController extends Controller
 
     public function changeMode(Request $request){
         $onoff=null;
-        if($request->status == "Enable signing"){
+        if($request->status){
             $onoff = false;
-        }
-        else if($request->status == "Disable signing"){
+        }else{
             $onoff = true;
         }
         $event = Event::where('id',$request->id)->update([
