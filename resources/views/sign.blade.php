@@ -129,7 +129,7 @@
             @endif
             @if($acceptance)
                 @if(!$isSigned)
-                    <form method="POST" action="/sign-guestbook" class=" identity form-inline my-2 justify-content-between">
+                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between identity">
                         @csrf
                         <!-- The value will be changed later !!! -->
                         <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
