@@ -5,7 +5,27 @@
         margin:auto;
     }
     
-    
+    @media only screen and (min-width: 576px) {
+        .identity{
+            display: block!important;
+            width: 100%!important;
+            margin-bottom: 10px;
+        }
+        .btn-right{
+            margin-left: auto;
+        }
+    }
+    @media only screen and (min-width: 691px) {
+        .identity {
+            display: inline-block!important;
+            width: auto!important;
+            vertical-align: middle!important;
+            margin-bottom: 0px;
+        }
+        .btn-right{
+            margin-left: none;
+        }
+    }
 </style>
 @section('content')
 
@@ -109,14 +129,14 @@
             @endif
             @if($acceptance)
                 @if(!$isSigned)
-                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between identity">
+                    <form method="POST" action="/sign-guestbook" class="form-inline my-2 justify-content-between">
                         @csrf
                         <!-- The value will be changed later !!! -->
-                        <input type="text" class="form-control col-md-3" value="{{$user->name}}" readonly>
-                        <input type="text" class="form-control col-md-4 @error('address') is-invalid @enderror" name="address" value="{{$user->address}}" placeholder ="Address">
+                        <input type="text" class="form-control col-md-3 identity" value="{{$user->name}}" readonly>
+                        <input type="text" class="form-control col-md-4  identity@error('address') is-invalid @enderror" name="address" value="{{$user->address}}" placeholder ="Address">
 
                         
-                        <input type="text" class="form-control col-md-4 @error('message') is-invalid @enderror" name="message" value="" placeholder="Message">
+                        <input type="text" class="form-control col-md-4  identity@error('message') is-invalid @enderror" name="message" value="" placeholder="Message">
                         <button type="submit" class="btn btn-common btn-right my-2 my-sm-0"><span class="fas fa-check"></span> Sign!</button>
                         <input type="hidden" name="eventId" value={{$eventId}}>
                         @error('address')
