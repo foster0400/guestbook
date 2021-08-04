@@ -115,10 +115,10 @@
                         </div>
                     </form>
         
-                    @foreach(@event->sign->get() as @sign)
-                        {{@sign->signer_id}}
-                        {{@sign->adress}}
-                        {{@sign->message}}
+                    @foreach($event->sign->get() as $sign)
+                        {{$sign->signer_id}}
+                        {{$sign->adress}}
+                        {{$sign->message}}
                     @endforeach
                 @else
                     <div class="row justify-content-center">
