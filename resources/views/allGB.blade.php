@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class = "row justify-content-center">
-        <div class = "col-md">
+        <div class = "col-md center-block text-center">
             <div class="card">
                 <div class = "card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
@@ -18,10 +18,10 @@
                     </div>
                     @foreach($events as $event)
                         <div class="row justify-content-center">
-                            <div class="col-sm-3"style="border:1px solid black">
+                            <div class="col-sm-3 center-block text-center"style="border:1px solid black">
                                 <strong>{{$event->id}}</strong>
                             </div>
-                            <div class="col-sm-5"style="border:1px solid black">
+                            <div class="col-sm-5 center-block text-center"style="border:1px solid black">
                                 <strong>{{$event->title}}</strong>
                             </div>
                         </div>
