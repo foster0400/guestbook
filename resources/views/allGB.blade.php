@@ -24,6 +24,9 @@
     .bg-header{
         background-color: #697184;
     }
+    h5 a{
+        text-decoration: underline;
+    }
     
 </style>
 @section('content')
