@@ -6,6 +6,8 @@
 </style>
 @section('content')
 <div class="container">
+    <div class = "row justify-content-center">
+        <div class = "col-md center-block text-center">
             <div class="card">
                 <div class = "card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
@@ -33,7 +35,8 @@
                 @endif
                 </div>
             </div>
-
+        </div>
+    </div>
 </div>
     <!-- <div class="container">
         <h3 style="text-align:center; padding-bottom:25px;padding-top:25px">My Guestbook</h3>
