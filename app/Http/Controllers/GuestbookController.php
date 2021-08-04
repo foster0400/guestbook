@@ -52,7 +52,8 @@ class GuestbookController extends Controller
             'description' => $request->description,
             'creator_id' => Auth::user()->id,
         ]);
-        return redirect()->back();
+        $event_id = Auth()->user()->event->last()->id;
+        return redirect()->to('/sign-guestbook?eventId='.$event_id);
     }
 
     public function updateGB(Request $request){
