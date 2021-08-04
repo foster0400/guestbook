@@ -21,22 +21,26 @@
                 <div class = "card-body bg-white">
                 @if(!$events->isEmpty())
                     <div class="row bg-dark text-white">
+                        <div class="col-sm-2"></div>
                         <div class="col-sm-3 center-block text-center">
                             <strong>Event ID</strong>
                         </div>
                         <div class="col-sm-5 center-block text-center">
                             <strong>Event Title</strong>
                         </div>
+                        <div class="col-sm-2"></div>    
                     </div>
                     @foreach($events as $event)
                     <a href="/sign-guestbook?eventId={{$event->id}}">
                         <div class="row item">
+                            <div class="col-sm-2"></div>
                             <div class="col-sm-3 center-block text-center">
                                 <strong>{{$event->id}}</strong>
                             </div>
                             <div class="col-sm-5 center-block text-center">
                                 <strong>{{$event->title}}</strong>
                             </div>
+                            <div class="col-sm-2"></div>
                         </div>
                     </a>
                     @endforeach
