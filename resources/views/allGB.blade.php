@@ -5,10 +5,15 @@
         margin-right: auto;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .item{
         border-bottom: 1px solid #B1A6A4;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
+    }
+    .card{
+        border: 2px solid #B1A6A4;
     }
     .bg-card-header{
         background-color:#B1A6A4!important;
