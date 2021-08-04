@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h3 style="text-align:center">My Guestbook</h3>
+        <h3 style="text-align:center; padding-bottom:50px;padding-top:50px">My Guestbook</h3>
         @if(!$events->isEmpty())
             <div class="row justify-content-center">
                 <div class="col-sm-3 center-block text-center">
