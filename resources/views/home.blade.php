@@ -47,7 +47,7 @@
             </div>
             <div>
                 <div class="row-man"><h3 style="font-size:2vw;">Hello, welcome to .....</h3></div>
-                <div class="row-man"><h1 style="font-size:4vw;">AMAZON GUESTBOOK<h1></div>
+                <div class="row-man"><h1 style="font-size:4vw;">AWS GUESTBOOK<h1></div>
                 <div class="row-man"><h3 style="font-size:2vw;">Let's get Started</h3></div>
                 <div class="row-man">
                     <div class="col-btn">
