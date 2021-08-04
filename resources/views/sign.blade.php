@@ -114,9 +114,7 @@
                             </div>
                         </div>
                     </form>
-                    if(!$event->sign->isempty())
-                    {
-
+                    @if(!$event->sign->isEmpty())
                         <div class="row bg-header text-white">
                             <div class="col-sm-1"></div>
                             <div class="col-sm-2 center-block text-center">
@@ -146,7 +144,7 @@
                             </div>
                         </a>
                         @endforeach
-                    }
+                    @endif
                     
                 @else
                     <div class="row justify-content-center">
