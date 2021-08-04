@@ -4,11 +4,15 @@
         /* width: 100%; */
         margin:auto;
     }
-    /* @media (min-width: 576px){
-        .form-inline .form-control {
-            width:max;
-        }
-    } */
+    .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+
+
 </style>
 @section('content')
 
