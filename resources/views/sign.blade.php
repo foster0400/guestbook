@@ -11,6 +11,9 @@
             width: 100%!important;
             margin-bottom: 10px;
         }
+        .btn-right{
+            margin-left: auto;
+        }
     }
 </style>
 @section('content')
@@ -123,7 +126,7 @@
 
                         
                         <input type="text" class="form-control col-md-4 @error('message') is-invalid @enderror" name="message" value="" placeholder="Message">
-                        <button type="submit" class="btn btn-primary my-2 my-sm-0"><span class="fas fa-check"></span> Sign!</button>
+                        <button type="submit" class="btn btn-common btn-right my-2 my-sm-0"><span class="fas fa-check"></span> Sign!</button>
                         <input type="hidden" name="eventId" value={{$eventId}}>
                         @error('address')
                             <span class="invalid-feedback" role="alert">
