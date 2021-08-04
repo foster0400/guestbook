@@ -10,14 +10,15 @@
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
     }
-    .item:hover{
-        background-color: grey;
+    .bg-card-header{
+        background-color:#B1A6A4;
+        color: #F2F1EF!important;
     }
 </style>
 @section('content')
 <div class="container">
             <div class="card">
-                <div class = "card-header text-center bg-dark">{{__('My Guestbook')}}</div>
+                <div class = "card-header text-center bg-card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
                 @if(!$events->isEmpty())
                     <div class="row bg-dark text-white">
