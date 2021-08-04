@@ -16,7 +16,7 @@
         border: 1px solid black;
     }
     a{
-        color: #F2F1EF!important;
+        color: #413f3d!important;
     }
     a:hover{
         color: #B1A6A4!important;

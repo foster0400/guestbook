@@ -103,7 +103,7 @@
         border: none;
     }
     .bg-card-body{
-        background-color: #697184!important;
+        background-color: #f2f1ef!important;
         border: none;
     }
 
