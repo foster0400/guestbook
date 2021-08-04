@@ -1,8 +1,8 @@
 @extends('layouts.app')
 <style>
     .row{
-        border-bottom: 1px solid black;
-        width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
@@ -14,7 +14,7 @@
                 <div class = "card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
                 @if(!$events->isEmpty())
-                    <div class="row justify-content-center bg-dark text-white">
+                    <div class="rowbg-dark text-white">
                         <div class="col-sm-3 center-block text-center">
                             <strong>Event ID</strong>
                         </div>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     @foreach($events as $event)
-                        <div class="row justify-content-center">
+                        <div class="row">
                             <div class="col-sm-3 center-block text-center">
                                 <strong>{{$event->id}}</strong>
                             </div>
