@@ -5,19 +5,19 @@
         <h3 style="text-align:center; padding-bottom:25px;padding-top:25px">My Guestbook</h3>
         @if(!$events->isEmpty())
             <div class="row justify-content-center">
-                <div class="col-sm-3 center-block text-center"style="1px solid black">
+                <div class="col-sm-3 center-block text-center"style="border:1px solid black">
                     <strong>Event ID</strong>
                 </div>
-                <div class="col-sm-5 center-block text-center"style="1px solid black">
+                <div class="col-sm-5 center-block text-center"style="border:1px solid black">
                     <strong>Event Title</strong>
                 </div>
             </div>
             @foreach($events as $event)
                 <div class="row justify-content-center">
-                    <div class="col-sm-3"style="1px solid black">
+                    <div class="col-sm-3"style="border:1px solid black">
                         <strong>{{$event->id}}</strong>
                     </div>
-                    <div class="col-sm-5"style="1px solid black">
+                    <div class="col-sm-5"style="border:1px solid black">
                         <strong>{{$event->title}}</strong>
                     </div>
                 </div>
