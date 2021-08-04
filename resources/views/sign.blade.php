@@ -26,7 +26,7 @@
             margin-left: none;
         }
     }
-    @media only screen and (min-width: 691px) {
+    @media only screen and (min-width: 901px) {
         .identity {
             display: inline-block!important;
             width: auto!important;
