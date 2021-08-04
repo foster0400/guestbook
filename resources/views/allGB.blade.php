@@ -28,6 +28,7 @@
     }
     a:hover{
         color: #B1A6A4!important;
+        background-color: rgba(0,0,0,0.5);
     }
     
 </style>
