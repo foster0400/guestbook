@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <style>
     .card{
-        width: 80%;
+        width: 100%;
         margin: auto;
         padding: 5%;
         border: 2px solid black!important;
