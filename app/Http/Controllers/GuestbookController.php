@@ -90,16 +90,29 @@ class GuestbookController extends Controller
         return view('allGB',['events'=>$events]);
     }
 
-    public function myProfile(){
-        $my = Auth()->user();
-        return view('profile', ['my' => $my]);
-    }
-    public function updateProfile(Request $request){
-        $this->validate($request, [
-            'address' => ['string', 'max:100'],
+    public function changeMode(Request $request){
+        $onoff=null;
+        if($request->status == "Enable signing"){
+            $onoff = true;
+        }
+        if($request->status == "Disable signing"){
+            $onoff = false;
+        }
+        $event = Event::where('id',$request->id)->update([
+            'isOpened' => $onoff,
         ]);
-        // User::where(update([
-
-        // ])
     }
+
+    // public function myProfile(){
+    //     $my = Auth()->user();
+    //     return view('profile', ['my' => $my]);
+    // }
+    // public function updateProfile(Request $request){
+    //     $this->validate($request, [
+    //         'address' => ['string', 'max:100'],
+    //     ]);
+    //     // User::where(update([
+
+    //     // ])
+    // }
 }
