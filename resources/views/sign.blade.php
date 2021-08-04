@@ -115,6 +115,11 @@
                         </div>
                     </form>
         
+                    @foreach(@event->sign as @sign)
+                        {{@sign->signer_id}}
+                        {{@sign->adress}}
+                        {{@sign->message}}
+                    @endforeach
                 @else
                     <div class="row justify-content-center">
                         <h3>{{$event->title}}</h3>
