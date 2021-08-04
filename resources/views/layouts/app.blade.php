@@ -72,6 +72,7 @@
         z-index: -1;
     }
     .container-box{
+        background-color: #F2F1EF!important;
         width: 1300px;
         height: auto;
         margin: auto;
@@ -82,7 +83,7 @@
     }
     .box-content{
         background-color: #F2F1EF!important;
-        width: 1300px;
+        width: auto;
         height: 100%;
         margin: auto;
         padding-top: 50px;
