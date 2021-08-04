@@ -105,7 +105,7 @@
         border: none;
     }
     .dropdown-item:hover{
-        color: black;
+        color: black!important;
     }
 
 
