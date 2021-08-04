@@ -21,6 +21,9 @@
             margin-left: none;
         }
     }
+    .bg-header{
+        background-color: #697184;
+    }
 </style>
 @section('content')
 
@@ -111,33 +114,38 @@
                             </div>
                         </div>
                     </form>
-        
-                    <div class="row">
-                        <div class="column">
-                            Name
-                        </div>
-                        <div class="column">
-                            Address
-                        </div>
-                        <div class="column">
-                            Message
-                        </div>
-                    </div>
-                    @foreach($event->sign as $sign)
-                        <div class="row">
-                            <div class="column">
-                                {{$sign->user->name}}
+                    @if(!$event->sign->isEmpty())
+                        <div class="row bg-header text-white">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2 center-block text-center">
+                                <strong>Name</strong>
                             </div>
-                            <div class="column">
-                                {{$sign->address}}
+                            <div class="col-sm-2 center-block text-center">
+                                <strong>Address</strong>
                             </div>
-                            <div class="column">
-                                {{$sign->message}}
+                            <div class="col-sm-6 center-block text-center">
+                                <strong>Message</strong>
                             </div>
+                            <div class="col-sm-1"></div>
                         </div>
-                        
-                        
-                    @endforeach
+                        @foreach($event->sign as $sign)
+                            <div class="row item">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-2 center-block text-center">
+                                    <strong>{{$sign->user->name}}</strong>
+                                </div>
+                                <div class="col-sm-2 center-block text-center">
+                                    <strong>{{$sign->address}}</strong>
+                                </div>
+                                <div class="col-sm-6 center-block text-center">
+                                    <strong>{{$sign->message}}</strong>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                        </a>
+                        @endforeach
+                    @endif
+                    
                 @else
                     <div class="row justify-content-center">
                         <h3>{{$event->title}}</h3>
