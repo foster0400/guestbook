@@ -95,7 +95,7 @@ class GuestbookController extends Controller
         if($request->status == "Enable signing"){
             $onoff = true;
         }
-        if($request->status == "Disable signing"){
+        else if($request->status == "Disable signing"){
             $onoff = false;
         }
         $event = Event::where('id',$request->id)->update([
