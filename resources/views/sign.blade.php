@@ -15,7 +15,7 @@
             margin-left: auto;
         }
     }
-    /* @media only screen and (min-width: 691px) {
+    @media only screen and (min-width: 691px) {
         .identity {
             /* display: inline-block!important;
             width: auto!important;
@@ -25,8 +25,8 @@
         .btn-right{
             margin-left: none;
         }
-    } */
-    @media only screen and (min-width: 900px) {
+    }
+    @media only screen and (min-width: 745px) {
         .identity {
             /* display: inline-block!important;
             width: auto!important;
