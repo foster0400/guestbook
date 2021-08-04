@@ -113,8 +113,8 @@
                     </form>
         
                     @foreach($event->sign as $sign)
-                        {{$sign->signer_id}}
-                        {{$sign->adress}}
+                        {{$sign->user->name}}
+                        {{$sign->address}}
                         {{$sign->message}}
                     @endforeach
                 @else
