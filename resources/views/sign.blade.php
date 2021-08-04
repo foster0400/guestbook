@@ -46,7 +46,6 @@
                 </div>
 
                 <div class="form-group row">
-                    <input type="hidden" name="eventId" value="{{$event->id}}">
                     <label for="status" class="col-md-4 col-form-label text-md-right">{{ __('Signing status') }}</label>
                     @if($acceptance)
                         <div class="col-md-6">
@@ -70,23 +69,22 @@
             
             <form method="POST" action="/change-mode">
                 @csrf
-                @if($acceptance)
-                    <div class="form-group row mb-0">
-                        <div class="col-md-6 offset-md-4">
+                
+                <div class="form-group row mb-0">
+                    <div class="col-md-6 offset-md-4">
+                        @if($acceptance)
+                            <input id="status" type="hidden" class="form-control" name="status" value="Enable signing" readonly>
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Close The Access') }} 
-                            </button>
-                        </div>
-                    </div>
-                @else
-                    <div class="form-group row mb-0">
-                        <div class="col-md-6 offset-md-4">
+                            </button>  
+                        @else
+                            <input id="status" type="hidden" class="form-control" name="status" value="Disable signing" readonly>
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Open The Access') }} 
                             </button>
-                        </div>
+                        @endif
                     </div>
-                @endif
+                </div>
             </form>
 
         @else
