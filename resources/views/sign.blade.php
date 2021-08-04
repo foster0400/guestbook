@@ -5,27 +5,7 @@
         margin:auto;
     }
     
-    @media only screen and (min-width: 576px) {
-        .identity .form-control {
-            display: block!important;
-            width: 100%!important;
-            margin-bottom: 10px;
-        }
-        .btn-right{
-            margin-left: auto;
-        }
-    }
-    @media only screen and (min-width: 691px) {
-        .identity .form-control {
-            display: inline-block!important;
-            width: auto!important;
-            vertical-align: middle!important;
-            margin-bottom: 0px;
-        }
-        .btn-right{
-            margin-left: none;
-        }
-    }
+    
 </style>
 @section('content')
 
