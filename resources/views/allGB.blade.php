@@ -17,6 +17,7 @@
     }
     .card{
         border: 2px solid #B1A6A4!important;
+        background-color:#B1A6A4!important;
     }
     .bg-card-header{
         background-color:#B1A6A4!important;
