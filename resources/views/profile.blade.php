@@ -5,6 +5,9 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .card-header{
+        background-color: #B1a6a4!important;
+    }
 </style>
 @section('content')
     <div class="container">
