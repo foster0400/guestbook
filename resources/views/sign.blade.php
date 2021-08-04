@@ -4,7 +4,16 @@
         /* width: 100%; */
         margin:auto;
     }
-    
+    @media only screen and (min-width: 700px) {
+        .identity .form-control {
+            display: block!important;
+            width: 100%!important;
+            margin-bottom: 10px;
+        }
+        .btn-right{
+            margin-left: auto;
+        }
+    }
     @media only screen and (max-width: 700px) {
         .identity .form-control {
             display: block!important;
