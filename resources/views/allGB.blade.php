@@ -16,7 +16,13 @@
         font-size: 1.3rem;
     }
     .bg-card-body{
-        background-color: #F2F1EF!important;
+        background-color: #697184!important;
+    }
+    a{
+        color: #F2F1EF;
+    }
+    a:hover{
+        color: #B1A6A4;
     }
 </style>
 @section('content')
