@@ -73,12 +73,12 @@
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         @if($acceptance)
-                            <input id="status" type="hidden" class="form-control" name="status" value="Enable signing" readonly>
+                            <input id="status" type="hidden" class="form-control" name="status" value="true" readonly>
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Close The Access') }} 
                             </button>  
                         @else
-                            <input id="status" type="hidden" class="form-control" name="status" value="Disable signing" readonly>
+                            <input id="status" type="hidden" class="form-control" name="status" value="false" readonly>
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Open The Access') }} 
                             </button>
