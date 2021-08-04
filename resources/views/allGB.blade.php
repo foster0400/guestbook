@@ -3,6 +3,7 @@
     .row{
         margin-left: auto;
         margin-right: auto;
+        width: max-content;
     }
     .col-sm-3 .col-sm-5{
         border: 1px solid black;
