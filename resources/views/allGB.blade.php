@@ -14,7 +14,7 @@
                 <div class = "card-header">{{__('My Guestbook')}}</div>
                 <div class = "card-body bg-white">
                 @if(!$events->isEmpty())
-                    <div class="rowbg-dark text-white">
+                    <div class="row bg-dark text-white">
                         <div class="col-sm-3 center-block text-center">
                             <strong>Event ID</strong>
                         </div>
