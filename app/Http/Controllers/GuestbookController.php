@@ -97,7 +97,7 @@ class GuestbookController extends Controller
         }else{
             $onoff = true;
         }
-        $event = Event::where('id',$request->id)->update([
+        $event = Event::where('eventId',$request->id)->update([
             'isOpened' => $onoff,
         ]);
         return redirect()->back();
