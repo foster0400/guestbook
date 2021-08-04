@@ -21,6 +21,9 @@
             margin-left: none;
         }
     }
+    .bg-header{
+        background-color: #697184;
+    }
 </style>
 @section('content')
 
