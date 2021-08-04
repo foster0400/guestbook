@@ -13,7 +13,7 @@
         border: 1px solid black;
     }
     .card{
-        border: 2px solid #B1A6A4;
+        border: 2px solid #B1A6A4!important;
     }
     .bg-card-header{
         background-color:#B1A6A4!important;
