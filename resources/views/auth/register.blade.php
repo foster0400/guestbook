@@ -1,11 +1,30 @@
 @extends('layouts.app')
-
+<style>
+    .card{
+        border: 2px solid #F2F1EF!important;
+        background-color:#F2F1EF!important;
+        overflow: hidden;
+    }
+    .card-header{
+        background-color:#B1A6A4!important;
+        color: #413f3d!important;
+        font-size: 1.3rem;
+        border: none;
+    }
+    .card-body{
+        background-color: #f2f1ef!important;
+        border: none;
+    }
+</style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">
+                    <h3>{{ __('Register') }}</h3>
+                </div>
+                
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -62,7 +81,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-common">
                                     {{ __('Register') }}
                                 </button>
                             </div>
