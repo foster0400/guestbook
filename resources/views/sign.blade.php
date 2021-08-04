@@ -6,7 +6,7 @@
     }
     
     @media only screen and (min-width: 576px) {
-        .form-inline .form-control {
+        .identity .form-control {
             display: block!important;
             width: 100%!important;
         }
