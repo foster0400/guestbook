@@ -4,13 +4,7 @@
         /* width: 100%; */
         margin:auto;
     }
-    .form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    }
+    
 
 
 </style>
@@ -38,7 +32,7 @@
             <form method="POST" action="/update-guestbook">
                 @csrf
                 <input type="hidden" name="eventId" value="{{$event->id}}">
-                <div class="form-group row">
+                <div class="form-inline row">
                     <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Event Name') }}</label>
 
                     <div class="col-md-6">
