@@ -3,6 +3,7 @@ os: linux
 files:
    - source: /
      destination: /var/www/guestbook
+     overwrite: true
 permissions:
    - object: /var/www/guestbook
      pattern: "**"
