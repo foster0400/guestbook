@@ -54,7 +54,7 @@
             </div>
             <div class="col-man">
                 <div class="row-man"><h3 style="font-size:2vw;">Hello, welcome to ...</h3></div>
-                <div class="row-man"><h1 style="font-size:4vw;">AWS Guestbook<h1></div>
+                <div class="row-man"><h1 style="font-size:4vw;">Codepipeline Test<h1></div>
                 <div class="row-man"><h3 style="font-size:2vw;">Let's get Started</h3></div>
                 <div class="row-man">
                     <div class="col-btn">
